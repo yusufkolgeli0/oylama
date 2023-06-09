@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>toplam</title>
+    </head>
+  <style>
+    p {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: rebeccapurple;
+    }
+    .header {
+      font-weight: bold;
+      font-size: large;
+      color: red;
+    }
+  </style>
+  
+    <body>
+    {% if total %}
+    <p class="header">SEÇMEN SAYISI: {{total}}</p> <br>
+    <p>GEBEŞ KAPLUMBAĞA: {{number1}} </p>
+    <P>KÜRTAJCI DAYI: {{number2}} </P>
+    {% else %}
+    <P>Bu bir get request olduğu için total değeri yok...</P>
+    {% endif %} 
+  </body>
+  
+</html>
